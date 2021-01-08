@@ -54,7 +54,6 @@ export default class Notification extends Component {
   // from 1 to 0
   startSlideOut() {
     const { autoHide, onClose } = this.props;
-
     this.animatedValue.setValue(1);
     this.getAnimation(0, autoHide).start(() => onClose());
   }
